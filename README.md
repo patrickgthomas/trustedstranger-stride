@@ -1,9 +1,12 @@
-# Gide - Stride
+# Gide Stride
 
-Landing page for Gide - Stride by Trusted Stranger.
+Landing page for Gide Stride, served at `stride.gidehub.com` via GitHub Pages.
 
-Custom domain:
+`index.html`, `assets/css/app.css` and `assets/js/nav.js` are **generated**. Do not
+edit them here. Edit the content in `src/data/apps/stride.json` (and the palette in
+`src/data/palettes.json`) in the main Gide site repo, then run:
 
-`stride.trustedstranger.app`
+    node tools/build-app-sites.mjs
 
-This folder is ready to connect to a GitHub repository and GitHub Pages.
+Full-size screenshots live in this repo's root; the web-sized WebP copies in
+`assets/shots/` are produced by `tools/resize-app-shots.py` in the same repo.
